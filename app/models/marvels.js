@@ -2,11 +2,11 @@ const mongoose = require('mongoose')
 
 const marvelsSchema = new mongoose.Schema(
 	{
-		title: {
+		name: {
 			type: String,
 			required: true,
 		},
-		text: {
+		power: {
 			type: String,
 			required: true,
 		},
@@ -21,4 +21,4 @@ const marvelsSchema = new mongoose.Schema(
 	}
 )
 
-module.exports = mongoose.model('Marvel', marvelSchema)
+module.exports = mongoose.model('Marvel', marvelsSchema)

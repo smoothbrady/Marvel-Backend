@@ -33,6 +33,7 @@ router.post('/sign-up', (req, res, next) => {
 		// reject any requests where `credentials.password` is not present, or where
 		// the password is an empty string
 		.then((credentials) => {
+			console.log(credentials)
 			if (
 				!credentials ||
 				!credentials.password ||
